@@ -1,45 +1,58 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
-    font-size: 18px;
+html {
+    font-size: 22px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body{
+body {
+    width: 55%;
+    margin: auto;
     background-color: #083b4c;
 }
 
-h1{
+::-webkit-scrollbar {
+    width: 3px;
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffd166;
+}
+
+h1 {
     margin: 30px 0;
     font-size: 3rem;
     text-align: center;
     color: white;
 }
 
-#container{
-    width: 50%;
-    margin: auto;
+#container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    padding: auto;
+    padding-bottom: 20px;
 }
 
-.square{
+.square {
     text-align: center;
     font-weight: 600;
-    line-height: 100px;
-    width: 100px;
-    height: 100px;
+    line-height: 120px;
+    width: 120px;
+    height: 120px;
     margin: 10px;
     border-radius: 5px;
     cursor: pointer;
-    transition: transform 0.2s, filter 0.2s;
+    transition: transform 0.2s, filter 0.2s, border 0.2s;
 }
 
-.square:hover{
+.square:hover {
+    box-shadow: inset 3px 3px 20px 0px rgba(255, 255, 255, 0.2), inset -3px -3px 20px 0px rgba(255, 255, 255, 0.2);
     transform: scale(1.1);
     filter: brightness(1.1);
 }

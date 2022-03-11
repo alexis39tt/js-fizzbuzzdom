@@ -1,7 +1,8 @@
+let container = document.getElementById("container");
+let square = document.getElementsByClassName("square");
+
 for (let i=1; i<=100; i++){
-    let container = document.getElementById("container");
     container.innerHTML += `<div class="square"><p>${i}</p></div>`;
-    let square = document.getElementsByClassName("square");
     if (i % 3 === 0 && i % 5 === 0){
         console.log("FizzBuzz");
         square[i-1].style.backgroundColor = "#f0466f";
